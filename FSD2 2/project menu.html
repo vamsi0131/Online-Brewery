@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RESTAURANT MENU</title>
+	<style>
+		body{
+			background:url(https://thumbs.dreamstime.com/b/image-wooden-table-front-abstract-blurred-restaurant-lights-background-144171093.jpg);
+		}
+		.box1{
+	        width:980px;
+		}
+
+		.box1 ul li{
+			text-align:left;
+			font-size:30px;
+			font-weight: bold;
+			text-decoration-line: none;
+			font-family: serif;
+		}
+		.box1 ul li a{text-decoration: none;
+			color: blanchedalmond;}
+
+			.box1 ul li:hover{ background-color:transparent; }
+			.box1 ul li a:hover{color: orange;}
+
+
+
+
+
+		#menu{
+			padding:25px 0 25px 0;
+		}
+		#section{
+			padding: 25px 0 25px 0;
+			text-align: center;
+			font-size: 3rem;
+			font-family: verdana;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+		}
+		#menu_row{
+			display:flex;
+			padding: 0 100px 0 100px;
+		}
+		#menu_col{
+			box-shadow: 2px 2px 2px #bbb;
+			border: 1px solid #bbb;
+			background-color: #fff;
+			margin: 5px;
+			padding: 10px;
+			flex:1;
+		}
+		#menu_col h2{
+			background-color: red;
+			color: #fff;
+			text-align: center;
+			padding: 5px;
+			font-family: cursive;
+			font-size:2rem;
+		}
+		#image{
+			width:150px;
+			height:150px;
+			border-radius: 50%;
+			padding: 5px;
+			border:2px solid orange;
+		}
+		#image img{
+			width:100%;
+			height:100%;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+		.box{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			margin: 5px;
+			font-size: 20px;
+		}
+		.button{
+			position: absolute;
+			right: 690px;
+			background-color: #4CAF50; /* Green */
+			border: none;
+			color: white;
+			padding: 18px;
+			text-decoration: none;
+			border-radius: 12px;
+			font-size: 19px;
+			cursor: pointer;
+			text-align: center;
+			font-weight: bold;
+		}
+	
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<ul type="none">
+			<li><a href="project.html">Home</a></li>
+		</ul>
+	</div>
+	<form action="storeHard.jsp" method="post">
+	<div id="menu">
+		<h1 id="section">Menu</h1>
+		<div id="menu_row">
+			<div id="menu_col">
+				<h2>Breakfast</h2>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen1.jpeg">
+					</div>
+					<div>
+						<h3>Dosa<input type="checkbox" name="hard" value="Dosa-30"></h3>
+						<h4>30/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen3.jpeg">
+					</div>
+					<div>
+						<h3>Idly<input type="checkbox" name="hard" value="Idly-20"></h2>
+						<h4>20/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen4.jpeg">
+					</div>
+					<div>
+						<h3>Puri <input type="checkbox" name="hard" value="Puri-40"></h3>
+						<h4>40/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen5.jpeg">
+					</div>
+					<div>
+						<h3>Vada<input type="checkbox" name="hard" value="Vada-30"></h3>
+						<h4>30/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen6.jpeg">
+					</div>
+					<div>
+						<h3>Mysore Bonda<input type="checkbox" name="hard" value="Mysore Bonda-40"></h3>
+						<h4>40/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen7.jpeg">
+					</div>
+					<div>
+						<h3>Upma<input type="checkbox" name="hard" value="Upma-30"></h3>
+						<h4>30/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen8.jpeg">
+					</div>
+					<div>
+						<h3>Chapathi<input type="checkbox" name="hard" value="Chapathi-45"></h3>
+						<h4>45/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen9.jpeg">
+					</div>
+					<div>
+						<h3>Uthappam<input type="checkbox" name="hard" value="Uthappam-40"></h3>
+						<h4>40/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen10.jpeg">
+					</div>
+					<div>
+						<h3>Lemon Rice<input type="checkbox" name="hard" value="Lemon Rice-25"></h3>
+						<h4>25/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen12.jpeg">
+					</div>
+					<div>
+						<h3>Mixed Veg Bath<input type="checkbox" name="hard" value="Mixed Veg Bath-30"></h3>
+						<h4>30/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen13.jpeg">
+					</div>
+					<div>
+						<h3>Rice Pongal<input type="checkbox" name="hard" value="Rice Pongal-20"></h3>
+						<h4>20/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen14.jpeg">
+					</div>
+					<div>
+						<h3>Tomato Bath<input type="checkbox" name="hard" value="Tomato Bath-30"></h3>
+						<h4>30/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen15.jpeg">
+					</div>
+					<div>
+						<h3>Sambar Vada<input type="checkbox" name="hard" value="Sambar Vada-40"></h3>
+						<h4>40/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="peasarattu.jpeg">
+					</div>
+					<div>
+						<h3>Pesarattu<input type="checkbox" name="hard" value="Pesarattu-30"></h3>
+						<h4>30/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="ravadosa.jpeg">
+					</div>
+					<div>
+						<h3>Rava Dosa<input type="checkbox" name="hard" value="Rava Dosa-50"></h3>
+						<h4>50/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen18.jpeg">
+					</div>
+					<div>
+						<h3>Appam<input type="checkbox" name="hard" value="Appam-45"></h3>
+						<h4>45/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen19.jpeg">
+					</div>
+					<div>
+						<h3>Bisi Bele Bath<input type="checkbox" name="hard" value="Bisi Bele Bath-30"></h3>
+						<h4>30/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen20.jpeg">
+					</div>
+					<div>
+						<h3>Puttu<input type="checkbox" name="hard" value="Puttu-30"></h3>
+						<h4>30/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen21.jpeg">
+					</div>
+					<div>
+						<h3>Masala Dosa<input type="checkbox" name="hard" value="Masala Dosa-40"></h3>
+						<h4>40/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen22.jpeg">
+					</div>
+					<div>
+						<h3>Egg Dosa<input type="checkbox" name="hard" value="Egg Dosa-50"></h3>
+						<h4>50/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen23.jpeg">
+					</div>
+					<div>
+						<h3>Cheese Dosa<input type="checkbox" name="hard" value="Cheese Dosa-40"></h3>
+						<h4>40/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen24.jpeg">
+					</div>
+					<div>
+						<h3>Panner Dosa<input type="checkbox" name="hard" value="Panner Dosa-50"></h3>
+						<h4>50/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tiffen11.jpeg">
+					</div>
+					<div>
+						<h3>Bread Omelette<input type="checkbox" name="hard" value="Bread Omelette-50"></h3>
+						<h4>50/-</h4>
+					</div>
+				</div>
+			</div>
+			<div id="menu_col">
+				<h2>Lunch</h2>
+				<div class="box">
+					<div id="image">
+						<img src="lunch1.jpeg">
+					</div>
+					<div>
+						<h3>Egg Biriyani<input type="checkbox" name="hard" value="Egg Biryani-200"></h3>
+						<h4>200/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch2.jpeg">
+					</div>
+					<div>
+						<h3>Chicken Fry Biriyani<input type="checkbox" name="hard" value="Chicken Fry Biriyani-280"></h3>
+						<h4>280/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch3.jpeg">
+					</div>
+					<div>
+						<h3>Mutton Biriyani<input type="checkbox" name="hard" value="Mutton Biriyani-300"></h3>
+						<h4>300/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch4.jpeg">
+					</div>
+					<div>
+						<h3>Chicken Dum Biriyani<input type="checkbox" name="hard" value="Chicken Dum Biriyani-220"></h3>
+						<h4>220/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch5.jpeg">
+					</div>
+					<div>
+						<h3>Mutton Dum Biriyani<input type="checkbox" name="hard" value="Mutton Dum Biriyani-350"></h3>
+						<h4>350/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch6.jpeg">
+					</div>
+					<div>
+						<h3>Fish Biriyani<input type="checkbox" name="hard" value="Fish Biriyani-330"></h3>
+						<h4>330/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch7.jpeg">
+					</div>
+					<div>
+						<h3>Prawns Biriyani<input type="checkbox" name="hard" value="Prawns Biriyani-350"></h3>
+						<h4>350/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch8.jpeg">
+					</div>
+					<div>
+						<h3>Egg Fried Rice<input type="checkbox" name="hard" value="Egg Fried Rice-190"></h3>
+						<h4>190/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch9.jpeg">
+					</div>
+					<div>
+						<h3>Chicken Fried Rice<input type="checkbox" name="hard" value="Chicken Fried Rice-200"></h3>
+						<h4>200/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch10.jpeg">
+					</div>
+					<div>
+						<h3>Meals<input type="checkbox" name="hard" value="Meals-100"></h3>
+						<h4>100/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch11.jpeg">
+					</div>
+					<div>
+						<h3>Special Chicken Biriyani<input type="checkbox" name="hard" value="Special Chicken Biryani-280"></h3>
+						<h4>280/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch12.jpeg">
+					</div>
+					<div>
+						<h3>Lollypop Biriyani<input type="checkbox" name="hard" value="Lollypop Biriyani-290"></h3>
+						<h4>290/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch13.jpeg">
+					</div>
+					<div>
+						<h3>Joint Biriyani<input type="checkbox" name="hard" value="Joint Biriyani-280"></h3>
+						<h4>280/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch14.jpeg">
+					</div>
+					<div>
+						<h3>Wings Biriyani<input type="checkbox" name="hard" value="Wings Biriyani-280"></h3>
+						<h4>280/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch15.jpeg">
+					</div>
+					<div>
+						<h3>Mushroom Fried Rice<input type="checkbox" name="hard" value="Mushroom Fried Rice-200"></h3>
+						<h4>200/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch16.jpeg">
+					</div>
+					<div>
+						<h3>Kaju Fried Rice<input type="checkbox" name="hard" value="Kaju Fried Rice-200"></h3>
+						<h4>200/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch17.jpeg">
+					</div>
+					<div>
+						<h3>Panner Fried Rice<input type="checkbox" name="hard" value="Panner Fried Rice-210"></h3>
+						<h4>210/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch18.jpeg">
+					</div>
+					<div>
+						<h3>Sezwan Veg Fried Rice<input type="checkbox" name="hard" value="Sezan Veg Fried Rice-190"></h3>
+						<h4>190/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch19.jpeg">
+					</div>
+					<div>
+						<h3>Sezwan Chicken Fried Rice<input type="checkbox" name="hard" value="Sezwan Chicken Fried Rice-200"></h3>
+						<h4>200/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch20.jpeg">
+					</div>
+					<div>
+						<h3>Panner Butter Masala<input type="checkbox" name="hard" value="Punner Butter Masala-230"></h3>
+						<h4>230/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch21.jpeg">
+					</div>
+					<div>
+						<h3>Methi Chaman<input type="checkbox" name="hard" value="Methi Chaman-230"></h3>
+						<h4>230/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch22.jpeg">
+					</div>
+					<div>
+						<h3>Kadai Panner<input type="checkbox" name="hard" value="Kadai Panner-250"></h3>
+						<h4>250/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch23.jpeg">
+					</div>
+					<div>
+						<h3>Kadai Veg<input type="checkbox" name="hard" value="Kadai Veg-210"></h3>
+						<h4>210/-</h4>
+					</div>
+				</div>
+			</div>
+			<div id="menu_col">
+				<h2>Dinner</h2>
+				<div class="box">
+					<div id="image">
+						<img src="tandooriroti.jpeg">
+					</div>
+					<div>
+						<h3>Tandoori Roti<input type="checkbox" name="hard" value="Tandoori Roti-30"></h3>
+						<h4>30/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="butterroti.jpeg">
+					</div>
+					<div>
+						<h3>Butter Roti<input type="checkbox" name="hard" value="Butter Roti-35"></h3>
+						<h4>35/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="plainnaan.jpeg">
+					</div>
+					<div>
+						<h3>Plain Naan<input type="checkbox" name="hard" value="Plain Naan-40"></h3>
+						<h4>40/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="butternaan.jpeg">
+					</div>
+					<div>
+						<h3>Butter Naan<input type="checkbox" name="hard" value="Butter Naan-45"></h3>
+						<h4>45/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tandoorichickenfull.jpeg">
+					</div>
+					<div>
+						<h3>Tandoori Chicken Full<input type="checkbox" name="hard" value="Tandoori Chicken-460"></h3>
+						<h4>460/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tandoorichickenhalf.jpeg">
+					</div>
+					<div>
+						<h3>Tandoori Chicken Half<input type="checkbox" name="hard" value="Tandoori Chicken Half-240"></h3>
+						<h4>240/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="tandoorijoint.jpeg">
+					</div>
+					<div>
+						<h3>Tandoori Joint<input type="checkbox" name="hard" value="Tandoori Joint-130"></h3>
+						<h4>130/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="kebabfull.jpeg">
+					</div>
+					<div>
+						<h3>Kabab Full<input type="checkbox" name="hard" value="Kabab Full-240"></h3>
+						<h4>240/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="kebabhalf.jpeg">
+					</div>
+					<div>
+						<h3>Kabab Half<input type="checkbox" name="hard" value="Kabab Half-140"></h3>
+						<h4>140/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="muttonsoup.jpeg">
+					</div>
+					<div>
+						<h3>Mutton Bone Soup<input type="checkbox" name="hard" value="Mutton Bone Soup-140"></h3>
+						<h4>140/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="dinner11.jpeg">
+					</div>
+					<div>
+						<h3>Chilli Panner<input type="checkbox" name="hard" value="Chilli Panner-210"></h3>
+						<h4>210/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="dinner12.jpeg">
+					</div>
+					<div>
+						<h3>Panner 65<input type="checkbox" name="hard" value="Panner 65-210"></h3>
+						<h4>210/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="dinner13.jpeg">
+					</div>
+					<div>
+						<h3>Mushroom 65<input type="checkbox" name="hard" value="Mushroom 65-210"></h3>
+						<h4>210/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="dinner14.jpeg">
+					</div>
+					<div>
+						<h3>Mushroom Manchuria<input type="checkbox" name="hard" value="Mushroom Munchuria-210"></h3>
+						<h4>210/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="dinner15.jpeg">
+					</div>
+					<div>
+						<h3>Baby Corn 65<input type="checkbox" name="hard" value="Baby Corn 65-210"></h3>
+						<h4>210/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="dinner16.jpeg">
+					</div>
+					<div>
+						<h3>Baby Corn Manchuria<input type="checkbox" name="hard" value="Baby Corn Manchuria-210"></h3>
+						<h4>210/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="dinner17.jpeg">
+					</div>
+					<div>
+						<h3>Chilli Mushroom<input type="checkbox" name="hard" value="Chilli Manchuria-210"></h3>
+						<h4>210/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch24.jpeg">
+					</div>
+					<div>
+						<h3>Baby Corn Masala<input type="checkbox" name="hard" value="Baby Corn Masala-230"></h3>
+						<h4>230/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch25.jpeg">
+					</div>
+					<div>
+						<h3>Mushroom Masala<input type="checkbox" name="hard" value="Mushroom Manchuria-230"></h3>
+						<h4>230/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch26.jpeg">
+					</div>
+					<div>
+						<h3>Kaju Tomato Curry<input type="checkbox" name="hard" value="Kaju Tomato Curry-240"></h3>
+						<h4>240/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch27.jpeg">
+					</div>
+					<div>
+						<h3>Kaju Masala<input type="checkbox" name="hard" value="Kaju Masala-260"></h3>
+						<h4>260/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="lunch28.jpeg">
+					</div>
+					<div>
+						<h3>Kaju Panner<input type="checkbox" name="hard" value="Kaju Panner-260"></h3>
+						<h4>260/-</h4>
+					</div>
+				</div>
+				<div class="box">
+					<div id="image">
+						<img src="dinner18.jpeg">
+					</div>
+					<div>
+						<h3>Malai Kofta Curry<input type="checkbox" name="hard" value="Malai Kofta Curry-300"></h3>
+						<h4>300/-</h4>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<script>
+				function myfunction()
+				{
+					alert("ORDERED SUCCESSFULLY.....");
+				}
+			</script>
+		</body>
+	</section>
+		<script>
+			function myfunction()
+			{
+				alert("ORDERED SUCCESSFULLY.....");
+			}
+		</script>
+	</body>
+</section>
+	<a href="done.jsp"><input type="submit" class="button"></a>
+</form>
+	<script>
+		function myfunction()
+		{
+			alert("ORDERED SUCCESSFULLY.....");
+		}
+	</script
+
+
+
+
+</body>
+</html>

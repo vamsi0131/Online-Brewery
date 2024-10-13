@@ -1,0 +1,155 @@
+*
+{
+ background-color: #000000;
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+  font-family:'Josefin Sans', sans-serif; 
+}
+.navbar
+{
+  
+  font-size: 16px;
+  text-decoration:none;  
+}
+
+ul
+{
+  padding: 1.2px;
+  display: flex;
+   
+}
+ul li
+{
+  list-style: none;
+  margin-left: 1200px;
+  margin-top: 2px;
+  font-size: 18px;
+}
+ul li a
+{
+  text-align:right;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+ul li a:hover
+{
+  color: rgb(234, 0, 255)
+}
+
+section
+{
+  padding: 40px 18%;
+}
+
+.contact
+{
+  /* background: #000000; */
+  position: relative;
+  left: 300px;
+  height: 100%;
+  width: 100%;
+  min-height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  align-items: center;
+  grid-gap: 10rem;
+}
+
+.contact-img
+{
+  max-width: 100%;
+  width: 520px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contact-form h1
+{
+  font-size: 50px;
+  color: #00ff08;
+  margin-bottom: 20px;
+}
+
+span
+{
+  font-size: 50px;
+  color: rgb(234, 0, 255);
+}
+
+.contact-form form
+{
+  position: relative;
+}
+
+.contact-form form input, form textarea
+{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #191919;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 0.7rem;
+  border-radius: 10px;
+}
+
+.contact-form form .btn
+{
+  display: inline-block;
+  background: rgb(234, 0, 255);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  width: 300px;
+  transition: 0.2 sec ease;
+  cursor: pointer;
+}
+
+.contact-form form .btn:hover
+{
+  border: 2px solid rgb(234, 0, 255);
+  background: transparent;
+  transform: scale(1.1);
+}
+
+p
+{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+p a
+{
+    text-decoration: none;
+    color: rgb(234, 0, 255);
+    line-height: 35px;
+}
+
+.para
+{
+    text-align: center;
+    width: 300px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: -30px;
+}
+
+.para a
+{
+    color: rgb(234, 0, 255);
+    text-decoration: none;
+    
+}
+
